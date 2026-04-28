@@ -1,7 +1,11 @@
 import streamlit as st
 import httpx
+import os
 
-API_URL = "http://localhost:8000"
+
+# we need to post into backend, so API_URL should be http://backend:8000
+# if we don't send in a env variable API_URL it will
+API_URL = os.getenv("API_URL", "http://localhost:8000")
 
 
 def layout():

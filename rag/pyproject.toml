@@ -9,8 +9,8 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "backend",
- "frontend",
- "ipykernel>=7.2.0",
+    "frontend",
+    "ipykernel>=7.2.0",
 ]
 
 [tool.uv.sources]
